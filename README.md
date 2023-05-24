@@ -12,7 +12,7 @@ Secara umum, aplikasi tersebut akan memiliki beberapa fitur utama, antara lain:
 
 4. Penanganan Permintaan dan Respon: Aplikasi menggunakan framework Golang Fiber untuk menangani permintaan dan merespon dengan data yang sesuai. Hal ini melibatkan pengaturan middleware untuk otentikasi JWT, pengiriman token JWT setelah login berhasil, dan menangani permintaan untuk fitur-fitur yang memerlukan otentikasi.
 
-5. Penyimpanan Data Pengguna: Informasi pengguna seperti akun, kata sandi, dan detail profil biasanya akan disimpan dalam database. Aplikasi dapat menggunakan sistem manajemen database seperti MySQL, PostgreSQL, atau MongoDB untuk menyimpan dan mengelola data pengguna.
+5. Penyimpanan Data Pengguna: Informasi pengguna seperti akun, kata sandi, dan detail profil biasanya akan disimpan dalam database MySql
 
 6. Perlindungan terhadap Serangan: Aplikasi harus mengimplementasikan langkah-langkah keamanan untuk melindungi token JWT dari serangan seperti CSRF (Cross-Site Request Forgery) dan XSS (Cross-Site Scripting). Salah satu cara untuk melakukannya adalah dengan mengimplementasikan fitur-fitur keamanan pada framework Golang Fiber yang melindungi aplikasi dari serangan tersebut.
 
