@@ -4,7 +4,7 @@ Aplikasi autentikasi dengan Golang Fiber menggunakan JWT (JSON Web Tokens) adala
 
 Secara umum, aplikasi tersebut akan memiliki beberapa fitur utama, antara lain:
 
-1. Registrasi Pengguna: Pengguna dapat membuat akun baru dengan menyediakan informasi seperti nama, alamat email, dan kata sandi. Informasi ini kemudian akan disimpan dalam database untuk penggunaan selanjutnya.
+1. Registrasi Pengguna: Pengguna dapat membuat akun baru dengan menyediakan informasi seperti nama, alamat email, phone number, dan kata sandi. Informasi ini kemudian akan disimpan dalam database untuk penggunaan selanjutnya.
 
 2. Login Pengguna: Pengguna yang sudah memiliki akun dapat melakukan login dengan menggunakan alamat email dan kata sandi yang valid. Setelah berhasil login, pengguna akan menerima token JWT yang akan digunakan untuk mengotentikasi akses ke fitur-fitur tertentu di dalam aplikasi.
 
@@ -14,8 +14,9 @@ Secara umum, aplikasi tersebut akan memiliki beberapa fitur utama, antara lain:
 
 5. Penyimpanan Data Pengguna: Informasi pengguna seperti akun, kata sandi, dan detail profil biasanya akan disimpan dalam database MySql
 
-6. Perlindungan terhadap Serangan: Aplikasi harus mengimplementasikan langkah-langkah keamanan untuk melindungi token JWT dari serangan seperti CSRF (Cross-Site Request Forgery) dan XSS (Cross-Site Scripting). Salah satu cara untuk melakukannya adalah dengan mengimplementasikan fitur-fitur keamanan pada framework Golang Fiber yang melindungi aplikasi dari serangan tersebut.
+6. Mendapatkan semua data users: Pengguna yang sudah login dapat mengakses semua data user.
+7. Update user: Pengguna dapat mengubah nama, email, phone number, dan password ketika sudah login
+8. Delete user: Pengguna dapat menghapus akunnya ketika sudah melakukan login
+ 
 
-Selain fitur-fitur tersebut, aplikasi autentikasi dengan Golang Fiber menggunakan JWT dapat memiliki fitur tambahan seperti pemulihan kata sandi, perubahan profil pengguna, dan penanganan kesalahan yang memadai.
 
-Penting untuk dicatat bahwa implementasi aplikasi autentikasi dengan Golang Fiber dan JWT dapat bervariasi tergantung pada kebutuhan dan preferensi spesifik. Deskripsi di atas memberikan gambaran umum tentang apa yang dapat diharapkan dari aplikasi tersebut.
